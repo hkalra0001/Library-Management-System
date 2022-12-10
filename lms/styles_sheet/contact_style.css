@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Nerko One', cursive;
+    background: linear-gradient(120deg,#2980b9, #8e44ad);
+    height: 100vh;
+}
+#heading{
+    margin-top: 10px;
+    margin-left: 35%;
+    font-size: 6rem;
+}
+.main-container{
+    position: absolute;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    column-gap: 50px;
+    row-gap: 50px;
+    margin-left: 100px;
+    margin-right: 150px;
+    margin-top: 50px;
+}
+
+
+div.ask-us{
+    border: 2px solid grey;
+    border-radius: 5px;  
+}
+
+div.ask-us h2{
+    margin: 0;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+div.ask-us ul{
+    padding: 20px;
+}
+div.ask-us p{
+    padding: 20px;
+}
+.Tell-us{
+    
+    border: 2px solid grey;
+    border-radius: 5px;
+    height: 100px;
+}
+div.Tell-us h2{
+    margin: 0;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+div.Tell-us p{
+    padding: 20px;
+}
+.staff-member{
+    
+    border: 2px solid grey;
+    border-radius: 5px;
+    grid-row: span 2;
+}
+div.staff-member > h1{
+    margin: 0;
+    color: white;
+    background-color: black;
+    padding: 20px;
+}
+
+div.staff-member div.member1,div.member2,div.member3 ul{
+    padding: 20px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+
+/* Navigation bar */
+#navbar {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    height: 80px;
+    top: 0px;
+}
+
+/* Navigation Bar : List Styling  */
+
+
+
+/* Navigation bar */
+#navbar {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    height: 80px;
+    top: 0px;
+}
+
+/* Navigation Bar : List Styling  */
+
+#navbar ul {
+    float: right;
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    margin: 20px 50px 20px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 10;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: rgb(0, 0, 0);
+    background-color: white;
+}

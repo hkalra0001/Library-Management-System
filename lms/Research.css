@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(120deg,#2980b9, #8e44ad);
+    height: 100vh;
+}
+h1{
+    font-size: 5rem;
+
+}
+.heading{
+    text-align: center;
+    
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    /* grid-template-rows: 1000px; */
+    column-gap: 0px;
+
+}
+.category-box{
+    /* border: 10px solid red; */
+    height: 165px;
+    
+}
+.category-box ul{
+    list-style: none;
+    width: 100%;
+    cursor: pointer;
+}
+.category-box a{
+    text-decoration: none;
+    color: black;
+}
+.category-box li{
+    display: block;
+    border: 2px solid black;
+    border-bottom: none;
+    text-align: center;
+}
+.category-box li:hover{
+    background-color: aquamarine;
+}
+.Files{
+    border: 10px solid black;
+
+    height: 652px;
+    font-size: 30px;
+    border-radius: 35px; /*new line added*/
+    border-top-left-radius: 0%;
+    margin-right: 5%;  
+}
+table{
+    width: 100%;
+    border-collapse:separate ;
+    border-spacing:0px 20px;
+}
+td{
+    text-align: left;
+    background-color: aqua;
+}
+
+#navbar {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    height: 80px;
+    top: 0px;
+  }
+  
+  /* Navigation Bar : List Styling  */
+  
+  #navbar ul {
+    float: right;
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+    margin: 20px 50px 20px;
+  }
+  
+  #navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 10;
+  }
+  
+  #navbar ul li {
+    list-style: none;
+    font-size: 1.5rem;
+  }
+  
+  #navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+  
+  #navbar ul li a:hover {
+    color: rgb(0, 0, 0);
+    background-color: white;
+  }

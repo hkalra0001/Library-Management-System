@@ -1,0 +1,24 @@
+
+/************* SearchTips ***********/
+.tablesearchtips							/*Edit-0*/
+{
+	border:1px solid #ddddee;
+	border-collapse: collapse;
+
+	background-color:#E8F0FF;
+}
+
+.tipsheading							/*Edit-1*/
+{
+	font-weight:bold;
+	font-family:Tahoma;
+	font-size:  13px;
+	color: #C65A10;
+}
+
+.tipstext							/*Edit-1*/
+{
+	font-family:Tahoma;
+	font-size:  10pt;
+	color: #0000A0;
+}

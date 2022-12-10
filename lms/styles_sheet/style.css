@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+
+/* css reset */
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body{
+    background: linear-gradient(#2980b9, #8e44ad);
+    height: 100vh;
+}
+/* CSS Variables */
+:root {
+    --navbar-height: 59px
+}
+
+/* Navigation bar */
+#navbar {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    height: 80px;
+    top: 0px;
+}
+
+/* Navigation Bar : List Styling  */
+
+#navbar ul {
+    float: right;
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    margin: 20px 50px 20px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 10;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    
+    position: absolute; 
+    height: 70%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.90;
+}
+
+#home h1 {
+    color: black;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    font-size: 5rem;
+}
+
+#home p {
+    color: black;
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Sacramento', cursive;
+    font-weight: bolder;
+
+
+}
+#home p::first-letter{
+    font-size: 30px;
+
+}
+#new{
+    padding: 10rem;
+    
+}
+/* Utility class */
+.h-primary {
+    font-size: 3.8rem;
+    padding: 38px;
+    font-family: 'Bree Serif', serif;
+
+}
+.h-secondary {
+    font-size: 2.5rem;
+    padding: 12px;
+    font-style: italic;
+}
+.center {
+    text-align: center;
+}
+.scroll{
+    color: black;
+    border: 1px solid white;
+    border-radius: 50px;
+    height: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.scroll marquee{
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+
+
+
+
+/*footer*/
+/* #318d46 */
+/* footer */
+footer{
+    margin: 0 10% 0 10%;
+}
+.main{
+    margin-top: 50px;
+    background-color: #222221;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 50px;
+    column-gap: 50px;
+    /* border: blue 10px solid; */
+}
+
+
+.logolms img{
+    width: 100px;
+    /* border: solid red 2px; */
+}
+.main p{
+    color: #318d46;
+}
+
+.main ul{
+    list-style: none;
+}
+.main li,p{
+    padding-bottom: 50px;
+    padding: 10px 0 10px 0;
+}
+
+.main .icon{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+i[class="fa-brands fa-linkedin-in fa-2xl"]:hover{
+    background-color: #0b66c3;
+    border: 20px solid #0b66c3;
+    border-radius: 40px;
+}
+i[class="fa-brands fa-instagram fa-2xl"]:hover{
+    background-color: rgb(195, 61, 61);
+    border: 20px solid rgb(195, 61, 61);
+    border-radius: 40px;
+}
+i[class="fa-brands fa-youtube fa-2xl"]:hover{
+    background-color: red;
+    border: 20px solid red;
+    border-radius: 40px;
+}
+i[class="fa-brands fa-twitter fa-2xl"]:hover{
+    background-color: #1da2f1;
+    border: 20px solid #1da2f1;
+    border-radius: 40px;
+}
+i[class="fa-brands fa-facebook-f fa-2xl"]:hover{
+    background-color: #1a76f3;
+    border: 20px solid #1a76f3;
+    border-radius: 40px;
+}
+.main a,li{
+    text-decoration: none;
+    color: white;
+}
+.main a:hover{
+    color: #318d46;
+    
+}
+
+
+
+
+
+
+/*search bar*/
+.search-bar{
+    display:inline-block;
+    margin-left: 350px;
+    text-align: center;
+    padding-top: 20px 0 20px 0;
+    border: 3px solid black;
+    border-radius: 15px;
+    font-weight: bolder;
+    font-size: 20px;
+    background-color: white;
+}
+.search-bar h1{
+    padding:20px;
+}
+.search-bar h3{
+    display: inline-block;
+    border-bottom: 2px solid rgb(53, 41, 41);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    
+}
+.search-bar select,label{
+    margin-top: 10px;
+}
+.search-bar input{
+    /* padding: 10px 0 10px 0; */
+    height: 20px;
+    margin-top: 10px;
+}
+
+
+

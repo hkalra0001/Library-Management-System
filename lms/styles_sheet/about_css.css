@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: linear-gradient(120deg,#2980b9, #8e44ad);
+    height: 100vh;
+}
+.about-section{
+    display: block;
+
+    padding: 50px;
+    text-align: justify;
+    color: black;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+
+.about-section h1{
+    text-align: center;
+    font-size: 8rem;
+    font-family:'Sacramento', cursive;
+}
+
+.sub-container{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.table-section{
+    /* order: #474e5d solid 1px; */
+    border-collapse: collapse;
+    display: table;
+    box-sizing: border-box;
+    border-spacing: 30px;
+    width: 700px;
+    height: 200px;
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.table-section tr:nth-child(even){
+    background-color: aqua;
+    
+}
+.table-section tr:nth-child(odd){
+    background-color: white;
+
+    
+}
+.sub-container{
+    text-align: justify;
+    /* border: 2px solid red; */
+    padding: 20px;
+    
+}
+.sub-container h3{
+    /* border: 2px solid blue; */
+    padding-bottom: 10px;
+}
+.sub-container h4{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.sub-container ul{
+    padding-left: 40px;
+}
+
+#navbar {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    height: 80px;
+    top: 0px;
+}
+
+/* Navigation Bar : List Styling  */
+
+#navbar ul {
+    float: right;
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    margin: 20px 50px 20px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 10;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
